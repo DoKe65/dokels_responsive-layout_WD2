@@ -13,10 +13,10 @@
   <body>
 
     <header id="home" class="flex">
-      <div id="main-nav">
+      <div class="main-nav">
       <h1>Doris Keller</h1>
-        <nav>
-          <ul>
+        <nav class="flex">
+          <ul class="flex">
             <li><a href="#home">Home</li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -24,10 +24,10 @@
           </ul>
         </nav>
       </div>
-      <aside class="profile">
+      <aside class="profile flex">
         <img src="images/responsive-layout-profile.png" alt="A generic profile image">
         <p>
-          Hi! I'm a freont-end developer who loves responsive design and css. I recently finished a degree in front-end web developement at Treehouse and am excited to put all my skills to use!
+          Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web developement at Treehouse and am excited to put all my skills to use!
         </p>
       </aside>
     </header>
@@ -43,7 +43,7 @@
         <section class="card">
           <img src="images/portfolio-2.png">
           <h3>Search Page</h3>
-          <p>This project searches through a specific databas to fnd information that the user is trying to look up.</p>
+          <p>This project searches through a specific database to fnd information that the user is trying to look up.</p>
         </section>
         <section class="card">
           <img src="images/portfolio-3.png">
@@ -63,14 +63,18 @@
         <section class="card">
           <img src="images/portfolio-6.png">
           <h3>Calculator</h3>
-          <p>Someone can enter in the numbers they want, and press the big blue utton and get the result.</p>
+          <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
         </section>
       </article>
       <article id="skills">
         <h2>Skills</h2>
         <p>I'm a live long learner and learning new skills is one of the most fulfilling "passtimes" in my opinion. During my FEWD Techdegree journey I aquired the following skills:</p>
-        <ul>
-          <li>HTML</li>
+        <ul class="skills-ul flex">
+          <li><img src="images/html-5.png" alt="HTML 5"></li>
+          <li><img src="images/css.png" alt="CSS 3"></li>
+          <li><img src="images/sass.png" alt="Sass"></li>
+          <li><img src="images/javascript.png" alt="JavaScript"></li>
+          <li><img src="images/github.png" alt="github"></li>
         </ul>
         <p>In addion, having the opportunity to do peer reviews during the techdegree and helping fellow students using the tools under my belt are activities I learned to appriciate. Participating in the fabulous slack community offered by team treehouse was one of the best decisions I ever made - thanks for that! It's addicting!</p>
       </article>
@@ -82,11 +86,11 @@
       </article>
     </main>
 
-    <footer class="flex">
-      <h3>Doris Keller</h3>
-      <nav>
+    <footer class="flex row">
+      <div class="footer-nav flex">
+        <h3>Doris Keller</h3>
         <ul class="mobile">
-          <li>Back To Top</li>
+          <li><a href="#home">Back To Top</a></li>
         </ul>
         <ul class="desktop">
           <li><a href="#home">Home</li>
@@ -94,7 +98,7 @@
           <li><a href="#interests">Special Interests</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav>
+      </div>    
     </footer>
 
   </body>

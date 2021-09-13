@@ -1,0 +1,201 @@
+/* General styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Sans", Verdana, sans-serif;
+  font-weight: 200;
+  margin: 0;
+  text-align: center;
+}
+
+.main-nav, aside, main, .footer-nav {
+  margin: 1rem;
+}
+
+img {
+  max-width: 100%;
+  margin: 1.5rem auto 0;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2 {
+  font-family: Lobster;
+}
+
+h1 {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  margin: 1.5rem 0;
+}
+
+header, footer {
+  background-color: rgba(254, 211, 110, .2);
+}
+
+h3, 
+#contact p a, #contact p span,
+.footer-nav {
+  font-weight: 400;
+}
+
+/* Header */
+
+.main-nav nav {
+  justify-content: stretch;
+}
+
+.main-nav ul {
+  width: 100%;
+}
+
+.main-nav li {
+  padding: 0.5rem;
+  margin: auto;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  background-color: rgba(254, 211, 110, 0.45);
+  font-weight: 400;
+}
+
+.main-nav li:hover,
+.main-nav li:active {
+  background-image: radial-gradient(circle, 
+                  rgba(237,67,5,0.6) 0%, 
+                  rgba(254, 211, 110, 0.8) 60%);
+  width: 90%;
+  height: 2.2rem;
+  margin: 0.4rem auto;
+  border-radius: 50px;
+  transition: 0.3s ease-in;
+}
+
+/* Main Content */
+
+#skills {
+  background-image: linear-gradient(
+                  #fff,
+                  rgba(254, 211, 110, 0.8) 10%,
+                  rgba(237,67,5,0.6) 45%,  
+                  rgba(254, 211, 110, 0.2));               
+  margin: 1rem -1rem;
+}
+#skills p, #skills ul {
+  margin: 1.5rem 1rem;
+}
+
+.skills-ul {
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-ul li {
+  flex-basis: 15vw;
+  margin: 0 1rem;
+}
+
+.skills-ul img {
+  margin: 0;
+}
+
+/* Footer */
+
+.footer-nav {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-nav ul {
+  margin-top: 1.2rem;
+}
+
+.desktop {
+  display: none;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+  
+  header {
+    padding-bottom: 1.5rem;
+  }
+
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  .main-nav nav ul {
+    flex-direction: row;
+    margin: auto;
+    width: 40vw;
+  }
+
+  .main-nav li {
+    background: none;
+  }
+
+  .profile {
+    flex-direction: row-reverse;
+  }
+
+  .profile img {
+    width: 40vw;
+    margin-right: 1.5rem;
+  }
+
+  .profile p, article,
+  #skills p, #skills ul {
+    margin: 1.5rem;
+  }
+
+  .profile p {
+    text-align: left;
+  }
+
+  article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  h2 {
+    flex-basis: 100%;
+  }
+
+  .card {
+    width: 42vw;
+    flex-basis: 1;
+  }
+
+  .skills-ul li {
+    flex-basis: 10vw;
+    margin: 0 1rem;
+  }
+
+  #contact {
+    flex-direction: column;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: flex;
+  }
+
+  .desktop li {
+    margin-left: 1rem;
+  }
+
+}
