@@ -8,6 +8,7 @@ body {
   font-weight: 200;
   margin: 0;
   text-align: center;
+  font-size: 18px;
 }
 
 .main-nav, aside, main, .footer-nav {
@@ -48,31 +49,26 @@ h3,
 
 /* Header */
 
-.main-nav nav {
+.main-nav  {
   justify-content: stretch;
 }
 
-.main-nav ul {
-  width: 100%;
-}
-
 .main-nav li {
+  width: 100%;
+  height: 2.4rem;
   padding: 0.5rem;
-  margin: auto;
+  margin: 0.5rem auto;
   margin-bottom: 0.5rem;
   border-radius: 5px;
   background-color: rgba(254, 211, 110, 0.45);
   font-weight: 400;
 }
 
-.main-nav li:hover,
-.main-nav li:active {
+.main-nav li:hover {
   background-image: radial-gradient(circle, 
                   rgba(237,67,5,0.6) 0%, 
                   rgba(254, 211, 110, 0.8) 60%);
   width: 90%;
-  height: 2.2rem;
-  margin: 0.4rem auto;
   border-radius: 50px;
   transition: 0.3s ease-in;
 }
@@ -114,7 +110,7 @@ h3,
 }
 
 .footer-nav ul {
-  margin-top: 1.2rem;
+  margin-top: 1.4rem;
 }
 
 .desktop {
@@ -136,11 +132,16 @@ h3,
   .main-nav nav ul {
     flex-direction: row;
     margin: auto;
-    width: 40vw;
   }
 
   .main-nav li {
-    background: none;
+    width: 8rem;
+    margin: 0 0.5rem;
+  }
+
+  .main-nav li:hover {
+    width: 6rem;
+    margin: 0 1.5rem;
   }
 
   .profile {
@@ -196,6 +197,42 @@ h3,
 
   .desktop li {
     margin-left: 1rem;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  
+  h1 {
+    padding-left: 0.5rem;
+  }
+
+  .main-nav,
+  .footer-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 800px;
+    width: 87%;
+    margin: 2rem auto;
+  }
+
+  main, .profile {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .profile {
+    margin-bottom: 2.5rem;
+  }
+
+  .card {
+    width: 30%;
+  }
+  
+  #skills {
+    border-left: 18px ridge #e65c18;
+    border-radius: 215px 0 0 15px;
   }
 
 }
